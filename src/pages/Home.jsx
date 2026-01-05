@@ -20,13 +20,20 @@ const Home = () => {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h2>Products</h2>
+      <h2><center>Products</center></h2>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: "15px" }}>
         {products.map(p => (
           <ProductCard key={p.id} product={p} addToCart={addToCart} />
         ))}
+
+
       </div>
     </div>
+
+    
+
+        
+
   );
 };
 
